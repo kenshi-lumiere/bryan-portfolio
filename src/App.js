@@ -22,8 +22,7 @@ function App() {
 
     document.addEventListener("mousemove", moveGradient);
 
-    return () =>
-      document.removeEventListener("mousemove", moveGradient);
+    return () => document.removeEventListener("mousemove", moveGradient);
   }, []);
 
   return (
